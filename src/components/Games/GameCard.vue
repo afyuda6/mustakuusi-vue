@@ -89,7 +89,7 @@ const scrollToTop = () => {
             alt="Unduh di Google Play"
             :class="styles.badge"
         /></a>
-        <h2 v-else>{{ countdown || "Segera hadir" }}</h2>
+        <h2 v-else :class="styles.badge">{{ countdown || "Segera hadir" }}</h2>
         <a v-if="props.game.playLink" :href="props.game.playLink" target="_blank" rel="noopener"><img
             :src="getImageUrl(`itchbadge.png`)"
             alt="Main di itch.io"
