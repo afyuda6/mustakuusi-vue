@@ -80,7 +80,6 @@ const scrollToTop = () => {
         </router-link>
       </h3>
       <time :class="styles.date" :dateTime="props.game.date">Dirilis: {{ props.game.date }}</time>
-      <p :class="styles.description">{{ props.game.description }}</p>
       <ul :class="styles.categories">
         <li :class="styles.category" v-for="(category, id) in props.game.categories" :key="id">{{ category }}</li>
       </ul>
