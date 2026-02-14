@@ -27,7 +27,7 @@ function setLanguage(lang: string) {
     <template v-if="!isIndonesian">
 
       <h1>Privacy Policy {{ props.id ? `for ${props.title}` : "" }}</h1>
-      <p><strong>Last updated:</strong> February 3, 2026</p>
+      <p><strong>Last updated:</strong> February 03, 2026</p>
       <p><em>{{ props.id ? `${props.title}` : "" }}</em> is a mobile game developed by <strong>mustakuusi</strong>. Your
         privacy is
         important to us. This Privacy Policy explains how information is collected, used, and shared when you
@@ -128,7 +128,7 @@ function setLanguage(lang: string) {
     <template v-else>
       <h1>Kebijakan Privasi {{ props.id ? `untuk ${props.title}` : "" }}</h1>
 
-      <p><strong>Pembaruan terakhir:</strong> 3 Februari 2026</p>
+      <p><strong>Pembaruan terakhir:</strong> 03 Februari 2026</p>
 
       <p>
         <em>{{ props.id ? `${props.title}` : "" }}</em> adalah gim seluler yang dikembangkan
