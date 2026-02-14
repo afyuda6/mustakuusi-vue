@@ -3,7 +3,6 @@ import {useRoute} from "vue-router";
 import Navbar from "../components/Navbar/Navbar.vue";
 import Hero from "../components/Hero/Hero.vue";
 import About from "../components/About/About.vue";
-import Games from "../components/Games/Games.vue";
 import Characters from "../components/Characters/Characters.vue";
 import Screenshots from "../components/Screenshots/Screenshots.vue";
 import Contact from "../components/Contact/Contact.vue";
@@ -70,10 +69,6 @@ const filteredCharacters = game
     <Screenshots
         :screenshots="game.screenshots"
         :title="game.title"
-    />
-    <Games
-        gameSection="Gim Lain"
-        :games="games"
     />
     <Contact/>
   </div>

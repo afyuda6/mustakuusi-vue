@@ -3,7 +3,6 @@ import {useRoute} from "vue-router";
 import Navbar from "../components/Navbar/Navbar.vue";
 import Hero from "../components/Hero/Hero.vue";
 import Games from "../components/Games/Games.vue";
-import Characters from "../components/Characters/Characters.vue";
 import Contact from "../components/Contact/Contact.vue";
 import characters from "../../../public/data/characters.json";
 import games from "../../../public/data/games.json";
@@ -54,7 +53,6 @@ const filteredGames = character ? (games as GameData[]).filter((p) =>
         :description="character.description"
     />
     <Games :gameSection="`${character.name} di Gim`" :games="filteredGames"/>
-    <Characters characterSection="Karakter Lain" :characters="characters"/>
     <Contact/>
   </div>
   <div v-else>
